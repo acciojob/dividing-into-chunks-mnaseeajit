@@ -7,9 +7,10 @@ const divide = (arr, n) => {
  let sum = 0;
   
   for (let i = 0; i < N; i++) {
-    sum = sum + arr[i];
-      if (sum <= n) {
+    //sum = sum + arr[i];
+      if (sum+arr[i] <= n) {
         subArr.push(arr[i]);
+		  sum += arr[i];
       } else {
          sum = arr[i];
 		 result.push(subArr);
